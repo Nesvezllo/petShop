@@ -1,0 +1,19 @@
+.navbar {
+	display: flex;
+	align-items: center;
+	padding: 15px 30px;
+	font-family: "Montserrat";
+	font-weight: 700;
+}
+
+.navbar-brand {
+	font-size: 25px;
+}
+
+.custom-navbar {
+	background-color: white;
+}
+
+.nav-text {
+	color: white;
+}
