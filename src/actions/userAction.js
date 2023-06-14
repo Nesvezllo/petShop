@@ -5,7 +5,7 @@ export const getAllUsers = () => async (dispatch) => {
 
 	try {
 		const response = await axios.get(
-			'http://http://45.12.74.190:8080//api/users/getallusers',
+			'http://http://45.12.74.190:8080/api/users/getallusers',
 		);
 		console.log(response);
 		dispatch({ type: 'GET_ALL_USERS_SUCCESS', payload: response.data });

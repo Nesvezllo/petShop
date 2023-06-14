@@ -10,7 +10,7 @@ export default function ForgotPassword() {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = `http://http://45.12.74.190:8080//api/password-reset`;
+			const url = `http://http://45.12.74.190:8080/api/password-reset`;
 			const { data } = await axios.post(url, { email });
 			setMsg(data.message);
 			setError('');

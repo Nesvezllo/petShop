@@ -5,7 +5,7 @@ export const getAllPizzas = () => async (dispatch) => {
 
 	try {
 		const response = await axios.get(
-			'http://http://45.12.74.190:8080//api/pizzas/getallpizzas',
+			'http://http://45.12.74.190:8080/api/pizzas/getallpizzas',
 		);
 		// console.log(response);
 		dispatch({ type: 'GET_PIZZAS_SUCCESS', payload: response.data });
@@ -18,7 +18,7 @@ export const addPizza = (pizza) => async (dispatch) => {
 	dispatch({ type: 'ADD_PIZZA_REQUEST' });
 	try {
 		const response = await axios.post(
-			'http://http://45.12.74.190:8080//api/pizzas/addItem',
+			'http://http://45.12.74.190:8080/api/pizzas/addItem',
 			{ pizza: pizza },
 		);
 		console.log(response);
@@ -32,7 +32,7 @@ export const getPizzaById = (itemid) => async (dispatch) => {
 	dispatch({ type: 'GET_PIZZA_BY_ID_REQUEST' });
 	try {
 		const response = await axios.post(
-			'http://http://45.12.74.190:8080//api/pizzas/getpizzabyid',
+			'http://http://45.12.74.190:8080/api/pizzas/getpizzabyid',
 			{ itemid: itemid },
 		);
 		console.log(response);
@@ -46,7 +46,7 @@ export const updatePizza = (updatedPizza) => async (dispatch) => {
 	dispatch({ type: 'UPDATE_PIZZA_REQUEST' });
 	try {
 		const response = await axios.post(
-			'http://http://45.12.74.190:8080//api/pizzas/updatepizza',
+			'http://http://45.12.74.190:8080/api/pizzas/updatepizza',
 			{ updatedPizza: updatedPizza },
 		);
 		console.log(response);
@@ -61,7 +61,7 @@ export const deletePizza = (itemid) => async (dispatch) => {
 	dispatch({ type: 'DELETE_PIZZA_REQUEST' });
 	try {
 		const response = await axios.post(
-			'http://http://45.12.74.190:8080//api/pizzas/deletepizza',
+			'http://http://45.12.74.190:8080/api/pizzas/deletepizza',
 			{ itemid: itemid },
 		);
 		console.log(response);

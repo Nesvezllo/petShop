@@ -9,7 +9,7 @@ const PasswordReset = () => {
 	const [msg, setMsg] = useState('');
 	const [error, setError] = useState('');
 	const param = useParams();
-	const url = `http://http://45.12.74.190:8080//api/password-reset/${param.id}/${param.token}`;
+	const url = `http://http://45.12.74.190:8080/api/password-reset/${param.id}/${param.token}`;
 
 	useEffect(() => {
 		const verifyUrl = async () => {
