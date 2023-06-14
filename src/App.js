@@ -30,7 +30,7 @@ function App() {
 		let token = localStorage.getItem('token');
 		if (token) {
 			const url =
-				'http://http://45.12.74.190:8080/api/auth/jwt/verify';
+				'http://45.12.74.190:8080/api/auth/jwt/verify';
 			axios
 				.get(url, {
 					params: {
